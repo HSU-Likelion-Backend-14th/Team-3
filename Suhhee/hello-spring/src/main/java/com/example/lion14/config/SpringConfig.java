@@ -1,4 +1,4 @@
-package com.example.lion14;
+package com.example.lion14.config;
 
 import com.example.lion14.repository.*;
 import com.example.lion14.service.MemberService;
@@ -38,7 +38,7 @@ public class SpringConfig {
         return new MemberService(memberRepository);
     }
 
-    //@Bean
+    //@Bean :: 해당 메소드가 리턴하는 객체를 스프링이 관리하는 빈으로 등록하겠다는 의미
     //public MemberRepository memberRepository() {
         //return new MemoryMemberRepository();
         //return new JdbcMemberRepository(dataSource);

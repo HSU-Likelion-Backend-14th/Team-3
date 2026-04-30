@@ -12,6 +12,13 @@ import java.util.Optional;
 @Service
 @Transactional
 public class MemberService {
+/*
+    // memory -> jdbc 로 변경할 경우 코드 하나하나 모두 수정해야 하는 번거로움이 있음
+    private MemberRepository memberRepository = new MemberRepository();
+
+    // 그래서 아래 코드처럼 수정할 경우 .. OCP를 위반하게 됨
+    private MemberRepository memberRepository = new JdbcMemberRepository(); -> OCP 위반
+ */
     private final MemberRepository memberRepository;
 
     @Autowired
