@@ -1,6 +1,5 @@
 package com.likelion.demo.global.constant;
 
-// http 상태코드 모아두는 클래스
 public class StaticValue {
     //SUCCESS
     public static final int OK = 200;
