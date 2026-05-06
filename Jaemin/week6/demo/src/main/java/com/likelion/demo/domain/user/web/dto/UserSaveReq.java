@@ -12,6 +12,6 @@ public class UserSaveReq {
     @NotBlank(message = "이름은 필수입니다.")
     private String username;
 
-    @NotNull(message = "셩별을 입력해주세요.")
+    @NotNull(message = "성별을 입력해주세요.")
     private Gender gender;
 }
