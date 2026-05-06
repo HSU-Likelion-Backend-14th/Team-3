@@ -53,7 +53,7 @@ public class GlobalExceptionHandler {
     }
 
     // Request Part 누락 시 발생
-    @ExceptionHandler(MissingServletRequestParameterException.class)
+    @ExceptionHandler(MissingServletRequestPartException.class)
     public ResponseEntity<ErrorResponse<?>>handleMissingServletRequestPartException(MissingServletRequestPartException e) {
         log.error("MissingServletRequestPartException : {}", e.getMessage(), e);
         ErrorResponse<?> errorResponse = ErrorResponse.from(ErrorResponseCode.INVALID_HTTP_MESSAGE_PARAMETER);
